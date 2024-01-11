@@ -21,6 +21,8 @@ body{
 .text-center{
     text-align: center;
 }
+
+
 .container{
     width:1200px;
     margin-left: auto;
@@ -36,17 +38,19 @@ body{
     display: table;
     clear: both;
 }
-.container>div{
+
+
+.hero .container>div{
     margin-top: 20px;
     border: 1px solid #fff;
 }
-.container>.hero-left{
+.hero .container>.hero-left{
     float: left;
     width: 40%;
     height: 125px;
     border-right:none;
 }
-.container>.hero-logo{
+.hero .container>.hero-logo{
     float: left;
     width: 20%;
     height: 125px;
@@ -66,7 +70,7 @@ body{
     padding-top: 8px;
     letter-spacing: 1px;
 }
-.container>.hero-right{
+.hero .container>.hero-right{
     float: left;
     width: 40%;
     height: 125px;
@@ -103,7 +107,7 @@ nav.container a{
     width:300px;
 }
 .container>.flbox{
-    background: url(/images2/flower.png) no-repeat center;
+    background: url(/wedding/images2/flower.png) no-repeat center;
     background-size: cover;
     width:230px;
     height: 120px;
@@ -184,4 +188,147 @@ h2.subtitle{
     background: rgb(189, 236, 200);
 }
 
-/*rgb(237,242,239)*/
+/**/
+section.whoami{
+    background-color: rgb(237,242,239);
+    padding-top: 50px ;
+}
+.leftbox{
+    width:60%;
+    float : left;
+    position: relative;
+}
+.leftbox img{
+    position: absolute;
+}
+img.aboutme{
+    top:25px;
+}
+img.aboutme2{
+    top:280px;
+    right: 120px;
+    border: 15px solid rgb(237,242,239);
+    z-index: 2;
+}
+.rightbox{
+    width:40%;
+    float : right;
+}
+.rightbox h1{
+    font-size:36px;
+    line-height: 1.5;
+}
+.rightbox p{
+    line-height: 1.8;
+}
+.whoami .btn{
+    margin-left: 0;
+}
+
+
+/******* packages **********/
+/**** 반응형 정사각형 만드는 공식 ****/
+.package-box{
+    width:100%;
+    position: relative;
+}
+.package-box::after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+.inner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.inner img{
+    width: 100%;
+    height: auto;
+}
+
+.packages h1{
+    font-size: 27px;
+}
+.packages p{
+    font-size: 17px;
+}
+.packages p.aurore{
+    font-size: 28px;
+}
+.packages .btn{
+    margin-left: auto;
+    width: 500px;
+}
+.banner{
+    width:100%;
+    height: 700px;
+    background: url(../images2/banner.webp) no-repeat center;
+    background-size: cover;
+}
+.banner h1{
+    font-size: 45px;
+    margin-top: 500px;
+}
+
+.banner2{
+    margin-top: 200px;
+    width:100%;
+    height: 800px;
+}
+.banner2 img#banner{
+    width:700px;
+    height: 500px;
+    z-index: 1;
+}
+.banner2_box{
+    background: rgb(237, 242, 239);
+    width:600px;
+    height: 350px;
+    margin-left: -100px;
+    margin-top: 100px;
+    padding: 30px;
+    float: right;
+    position: relative;
+    z-index: 3;
+}
+.banner2 p{
+    font-size: 18px;
+    text-align: left;
+    position: absolute;
+}
+.banner2 p.aurore{
+    text-align: right;
+    font-size: 30px;
+    position: absolute;
+    padding-top: 220px ;
+    padding-left: 370px;
+}
+
+.banner2 .btn{
+    margin-left: auto;
+    margin-top: 80px;
+    width: 250px;
+}
+footer{
+    height: 480px;
+    background-color: #333;
+}
+.footer_con{
+    color: #fff;
+    text-align: center;
+}
+.footer_logo{
+    padding-top: 30px;
+    color:#fff;
+    text-align: center;
+}
+.footer_sns img{
+    width:30px;
+    margin: 35px 10px 15px 5px;
+}
+footer .adress a{
+    text-decoration: none;
+    color: #fff;
+}
